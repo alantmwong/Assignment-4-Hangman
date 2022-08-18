@@ -12,7 +12,9 @@ import acm.util.*;
 import java.awt.*;
 
 public class Hangman extends ConsoleProgram {
-
+// 	instance variables
+	HangmanLexicon hangmanWords = new HangmanLexicon();
+	
     public void run() {
     	setupGame();
 		playGame();
