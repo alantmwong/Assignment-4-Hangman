@@ -46,7 +46,7 @@ public class Hangman extends ConsoleProgram {
 		if (guess.length() == 1) {
 			// converting string to char
 			char guessChar = guess.charAt(0);
-			);
+			
 		} else {
 			
 		}
