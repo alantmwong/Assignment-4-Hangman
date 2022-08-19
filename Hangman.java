@@ -15,7 +15,7 @@ public class Hangman extends ConsoleProgram {
 // 	instance variables
 	HangmanLexicon hangmanWords = new HangmanLexicon();
 	// Random number generator
-	private RandomGenerator rgen = RandomGenerator.nextInt();
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
     public void run() {
     	setupGame();
