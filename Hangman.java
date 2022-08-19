@@ -22,7 +22,7 @@ public class Hangman extends ConsoleProgram {
 		playGame();
 	}
     private void setupGame(){
-    	hangmanWords.getWord(rgen.nextInt(10));
+    	hangmanWords.getWord(rgen.nextInt());
     	println("Welcome to Hangman!");
     	
     	
