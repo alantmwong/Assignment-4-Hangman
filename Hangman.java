@@ -42,7 +42,7 @@ public class Hangman extends ConsoleProgram {
 
 		}
 		println(wordState);
-		while (guessesLeft != 0 || ) {
+		while (guessesLeft != 0 || wordState != secretWord) {
 			// get guess from the user
 			String guess = readLine("Your guess: ");
 			if (guess.length() == 1) { // making sure the guess is a single character
