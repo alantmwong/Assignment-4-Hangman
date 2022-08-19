@@ -20,6 +20,7 @@ public class Hangman extends ConsoleProgram {
 		playGame();
 	}
     private void setupGame(){
+    	hangmanWords.getWord(1);
     	println("Welcome to Hangman!");
     	
     	
