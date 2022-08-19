@@ -46,8 +46,9 @@ public class Hangman extends ConsoleProgram {
 		if (guess.length() == 1) { // making sure the guess is a single character
 			// converting string to char
 			char guessChar = guess.charAt(0);
-			Character.toUpperCase(guessChar);
-			if (Character.isLetter(guessChar)) {
+
+			if (Character.isLetter(guessChar)) { // making sure guess is a letter
+				Character.toUpperCase(guessChar);
 				
 			} else {
 				println("Error - guess was not a letter.");
