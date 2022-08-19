@@ -31,15 +31,11 @@ public class Hangman extends ConsoleProgram {
 	private void playGame(){
 		// Getting the secret word from HangmanLexicon through hangmanWords
 		String secretWord = hangmanWords.getWord(rgen.nextInt(10));
-		
+		String wordState;
 		// making the hint
 		for (int i = 0; i < secretWord.length(); i++) {
-			
+			wordState += "- ";
 					
 		}
-	}
-
-	private String chooseRandomWord(){
-		return "String";
 	}
 }
