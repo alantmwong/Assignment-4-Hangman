@@ -49,12 +49,16 @@ public class Hangman extends ConsoleProgram {
 
 			if (Character.isLetter(guessChar)) { // making sure guess is a letter
 				Character.toUpperCase(guessChar);
-				
+				// looping through secretWord to find matching letters to the guess
+				for (int i = 0; i < secretWord.length(); i++) {
+					
+				}
 			} else {
 				println("Error - guess was not a letter.");
 			}
 		} else {
 			println("Error - guess was not a single letter.");
 		}
+		
 	}
 }
