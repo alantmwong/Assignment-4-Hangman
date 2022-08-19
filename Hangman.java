@@ -38,11 +38,11 @@ public class Hangman extends ConsoleProgram {
 
 		// making the hint
 		for (int i = 0; i < secretWord.length(); i++) {
-			wordState += "- ";
+			wordState += "-";
 
 		}
 		println(wordState);
-		while (guessesLeft != 0) {
+		while (guessesLeft != 0 || ) {
 			// get guess from the user
 			String guess = readLine("Your guess: ");
 			if (guess.length() == 1) { // making sure the guess is a single character
