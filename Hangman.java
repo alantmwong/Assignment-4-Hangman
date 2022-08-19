@@ -40,5 +40,6 @@ public class Hangman extends ConsoleProgram {
 			
 		}
 		println(wordState);
+		
 	}
 }
