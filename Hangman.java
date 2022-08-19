@@ -39,5 +39,6 @@ public class Hangman extends ConsoleProgram {
 			wordState += "- ";
 			
 		}
+		println(wordState);
 	}
 }
