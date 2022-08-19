@@ -44,6 +44,7 @@ public class Hangman extends ConsoleProgram {
 		// get guess from the user
 		String guess = readLine("Your guess: ");
 		if (guess.length() == 1) {
+			char guessChar = guess.charAt(0);
 			
 		} else {
 			
