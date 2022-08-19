@@ -14,13 +14,15 @@ import java.awt.*;
 public class Hangman extends ConsoleProgram {
 // 	instance variables
 	HangmanLexicon hangmanWords = new HangmanLexicon();
+	// Random number generator
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
     public void run() {
     	setupGame();
 		playGame();
 	}
     private void setupGame(){
-    	hangmanWords.getWord(1);
+    	hangmanWords.getWord(rgen);
     	println("Welcome to Hangman!");
     	
     	
