@@ -34,7 +34,7 @@ public class Hangman extends ConsoleProgram {
 		
 		// making the hint
 		for (int i = 0; i < secretWord.length(); i++) {
-					
+			
 					
 		}
 	}
