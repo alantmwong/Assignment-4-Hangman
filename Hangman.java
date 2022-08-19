@@ -35,6 +35,7 @@ public class Hangman extends ConsoleProgram {
 		// Getting the secret word from HangmanLexicon through hangmanWords
 		String secretWord = hangmanWords.getWord(rgen.nextInt(10));
 		String wordState = "";
+		String newWordState = "";
 
 		// making the hint
 		for (int i = 0; i < secretWord.length(); i++) {
@@ -53,7 +54,7 @@ public class Hangman extends ConsoleProgram {
 					Character.toUpperCase(guessChar);
 					// looping through secretWord to find matching letters to the guess
 					for (int i = 0; i < secretWord.length(); i++) {
-
+						
 					}
 				} else {
 					println("Error - guess was not a letter.");
