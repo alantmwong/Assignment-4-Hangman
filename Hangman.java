@@ -22,20 +22,21 @@ public class Hangman extends ConsoleProgram {
 		playGame();
 	}
 	private void setupGame(){
-		// Getting the secret word from HangmanLexicon through hangmanWords
-		String secretWord = hangmanWords.getWord(rgen.nextInt(10));
-		// making the hint
-		for (int i = 0; i < secretWord.length(); i++) {
-			
-			
-		}
+		
 		// Introducing the game
 		println("Welcome to Hangman!");
 		println("The word looks like this: ");
 
 	}
 	private void playGame(){
-
+		// Getting the secret word from HangmanLexicon through hangmanWords
+		String secretWord = hangmanWords.getWord(rgen.nextInt(10));
+		
+		// making the hint
+		for (int i = 0; i < secretWord.length(); i++) {
+					
+					
+		}
 	}
 
 	private String chooseRandomWord(){
