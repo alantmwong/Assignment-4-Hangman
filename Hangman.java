@@ -22,9 +22,9 @@ public class Hangman extends ConsoleProgram {
 		playGame();
 	}
     private void setupGame(){
-    	hangmanWords.getWord(rgen.nextInt(10));
+    	String secretWord = hangmanWords.getWord(rgen.nextInt(10));
     	println("Welcome to Hangman!");
-    	
+    	println("The word looks like this")
     	
     }
     private void playGame(){
