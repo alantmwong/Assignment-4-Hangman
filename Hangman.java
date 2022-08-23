@@ -19,7 +19,7 @@ public class Hangman extends ConsoleProgram {
 	// guesses left
 	private int guessesLeft = 8;
 	// Initializing the word guess string
-	String wordState;
+	String wordState = "";
 	String newWordState;
 	
 	// Secret word
