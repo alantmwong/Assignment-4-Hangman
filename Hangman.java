@@ -33,11 +33,12 @@ public class Hangman extends ConsoleProgram {
 		
 		// Getting the secret word from HangmanLexicon through hangmanWords
 		String secretWord = hangmanWords.getWord(rgen.nextInt(10));
+		
 		// making the hint
 		for (int i = 0; i < secretWord.length(); i++) {
 			wordState += "-";
-
 		}
+		
 		
 
 	}
