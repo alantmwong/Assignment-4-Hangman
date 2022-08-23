@@ -20,6 +20,7 @@ public class Hangman extends ConsoleProgram {
 	private int guessesLeft = 8;
 	// Initialising the word guess string
 	String wordState;
+	String newWordState;
 	
 	public void run() {
 		setupGame();
@@ -41,9 +42,6 @@ public class Hangman extends ConsoleProgram {
 
 	}
 	private void playGame(){
-
-		String newWordState = "";
-
 		
 		println(wordState);
 		while (guessesLeft != 0 || wordState != secretWord) {
