@@ -27,7 +27,6 @@ public class Hangman extends ConsoleProgram {
 
 		// Introducing the game
 		println("Welcome to Hangman!");
-		println("The word looks like this: ");
 
 	}
 	private void playGame(){
@@ -44,6 +43,7 @@ public class Hangman extends ConsoleProgram {
 		}
 		println(wordState);
 		while (guessesLeft != 0 || wordState != secretWord) {
+			println("The word now looks like this: " + wordState);
 			// get guess from the user
 			String guess = readLine("Your guess: ");
 			if (guess.length() == 1) { // making sure the guess is a single character
