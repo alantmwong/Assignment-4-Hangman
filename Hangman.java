@@ -31,6 +31,7 @@ public class Hangman extends ConsoleProgram {
 		// Getting the secret word from HangmanLexicon through hangmanWords
 		String secretWord = hangmanWords.getWord(rgen.nextInt(10));
 		
+		
 
 	}
 	private void playGame(){
