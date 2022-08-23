@@ -18,9 +18,12 @@ public class Hangman extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	// guesses left
 	private int guessesLeft = 8;
-	// Initialising the word guess string
+	// Initializing the word guess string
 	String wordState;
 	String newWordState;
+	
+	// Secret word
+	String secretWord;
 	
 	public void run() {
 		setupGame();
@@ -32,19 +35,18 @@ public class Hangman extends ConsoleProgram {
 		println("Welcome to Hangman!");
 		
 		// Getting the secret word from HangmanLexicon through hangmanWords
-		String secretWord = hangmanWords.getWord(rgen.nextInt(10));
+		secretWord = hangmanWords.getWord(rgen.nextInt(10));
 		
 		// making the hint
 		for (int i = 0; i < secretWord.length(); i++) {
 			wordState += "-";
 		}
-		
+		println(wordState);
 		
 
 	}
 	private void playGame(){
 		
-		println(wordState);
 		while (guessesLeft != 0 || wordState != secretWord) {
 			println("The word now looks like this: " + wordState);
 			// get guess from the user
