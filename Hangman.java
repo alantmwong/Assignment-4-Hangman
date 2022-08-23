@@ -27,6 +27,7 @@ public class Hangman extends ConsoleProgram {
 
 		// Introducing the game
 		println("Welcome to Hangman!");
+		
 
 	}
 	private void playGame(){
