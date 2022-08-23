@@ -28,12 +28,13 @@ public class Hangman extends ConsoleProgram {
 		// Introducing the game
 		println("Welcome to Hangman!");
 		
+		// Getting the secret word from HangmanLexicon through hangmanWords
+		String secretWord = hangmanWords.getWord(rgen.nextInt(10));
+		
 
 	}
 	private void playGame(){
 
-		// Getting the secret word from HangmanLexicon through hangmanWords
-		String secretWord = hangmanWords.getWord(rgen.nextInt(10));
 		String wordState = "";
 		String newWordState = "";
 
