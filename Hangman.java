@@ -76,7 +76,7 @@ public class Hangman extends ConsoleProgram {
 				}
 			} else {
 				println("Error - guess was not a letter.");
-			}
+			} 
 		} else {
 			println("Error - guess was not a single letter.");
 		}
