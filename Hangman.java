@@ -52,6 +52,7 @@ public class Hangman extends ConsoleProgram {
 			println("The word now looks like this: " + wordState);
 			// get guess from the user
 			guess = readLine("Your guess: ");
+			guess.toUpperCase();
 			
 		}
 	}
