@@ -58,7 +58,7 @@ public class Hangman extends ConsoleProgram {
 		}
 	}
 	
-	private boolean checkLetter() {
+	private void checkLetter() {
 		if (guess.length() == 1) { // making sure the guess is a single character
 			// converting string to char
 			char guessChar = guess.charAt(0);
