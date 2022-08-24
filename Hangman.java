@@ -65,7 +65,7 @@ public class Hangman extends ConsoleProgram {
 							newWordState = wordState.substring(0, i) + guess + wordState.substring(i+1)
 						} else if (Character.toUpperCase(guessChar) == 
 							Character.toUpperCase(secretWord.charAt(i)) && i == 0) {
-							newWordState = guess + wordState(i+1);
+							newWordState = guess + wordState.substring(i+1);
 						}
 					}
 				} else {
