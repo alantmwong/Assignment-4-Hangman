@@ -40,6 +40,7 @@ public class Hangman extends ConsoleProgram {
 		// making the hint
 		for (int i = 0; i < secretWord.length(); i++) {
 			wordState += "-";
+			newWordState += "-";
 		}
 		println(wordState);
 		
@@ -61,7 +62,7 @@ public class Hangman extends ConsoleProgram {
 					for (int i = 0; i < secretWord.length(); i++) {
 						if (Character.toUpperCase(guessChar) == 
 							Character.toUpperCase(secretWord.charAt(i))) {
-							
+							wordState
 						}
 					}
 				} else {
