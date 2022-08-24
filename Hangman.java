@@ -53,7 +53,7 @@ public class Hangman extends ConsoleProgram {
 			// get guess from the user
 			guess = readLine("Your guess: ");
 			guess.toUpperCase();
-			checkGuess();
+			checkLetter();
 			
 		}
 	}
