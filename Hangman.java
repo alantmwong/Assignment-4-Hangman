@@ -21,6 +21,7 @@ public class Hangman extends ConsoleProgram {
 	// Initializing the word guess string
 	String wordState = "";
 	String newWordState;
+	String guess;
 	
 	// Secret word
 	String secretWord;
